@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Particles</title>
+        <link rel="stylesheet" href="game_styles.css">
+        <script src="gameOfLife.js" type="module"></script>
+    </head>
+    <body>
+      <header>
+              <h1>Blockade</h1>
+        </header>
+      <main>
+        <canvas width="500" height="500">
+        </canvas>
+      </main>
+      <aside>
+        <ul>
+          <li><h1>Rules</h1></li>
+          <li>Any live cell with two or three live neighbors survives.</li>
+          <li>Any dead cell with three live neighbors becomes a live cell.</li>
+          <li>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</li>
+        </ul>
+      </aside>
+    </body>
+</html>

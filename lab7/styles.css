@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width:100%;
+    display:grid;
+    grid-template-areas: "head head head"
+                         "aside main .";
+    grid-template-columns: 15% 1fr 15%;
+    background-color: #EBF5EE;
+
+}
+/*Header Style*/
+header{
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2em auto;
+}
+header h1{
+    font-size: 8em;
+    margin: 0 auto;
+    color:#808080;
+}
+header p{
+    font-size: 1.5em;
+}
+
+/*Aside Style*/
+aside{
+    grid-area: aside;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+aside section{
+      font-size: 1.5em;
+      padding:1em;
+      border: 1px solid black;
+}
+aside h1{
+    padding-bottom: 1em;
+}
+aside ul{
+    list-style: none;
+}
+aside li{
+  padding-top: 1em;
+  color:black;
+}
+/*Main Style*/
+main{
+    grid-area:main;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+main p{
+  font-size: 1.8em;
+}
+main ul{
+    list-style: none;
+}
+main li{
+  font-size: 1.6em;
+}
+.button{
+   background-color: #D8B8CB;
+    width:20%;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding:0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    color:black;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+main section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+img{
+  max-width: 100%
+}
+/* Form Style */
+input{
+  width:100%;
+  border: 2px solid #B084CC;
+  border-radius: 0.5em;
+}
+input[type=text], input[type=password]{
+  margin-bottom:2em;
+  padding:1em;
+}
+label{
+  font-size: 1.5em;
+}
+
+/* Figure Style */
+figure{
+  margin:1em;
+  padding:0.5em;
+  border: 2px black solid ;
+  border-radius: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+aside .button{
+  width: 80%;
+  margin: 1em auto;
+}
+a{
+  text-decoration: none;
+}

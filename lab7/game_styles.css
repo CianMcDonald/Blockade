@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  width:100%;
+  background-color: #88B0CD;
+  color: #384955;
+}
+@media only screen and (min-width: 1350px) {
+  body{
+    display:grid;
+    grid-template-areas: "head head head"
+                         "table main .";
+    grid-template-columns: 20% 1fr 20%;
+  }
+}
+/*Header Style*/
+header{
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header h1{
+    font-size: 8em;
+    margin: 0 auto;
+    color: #363B3F;
+}
+header p{
+    font-size: 1.5em;
+}
+/* Main Style */
+main{
+  grid-area: main;
+}
+canvas{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #F4FAFF;
+    margin-bottom:1.5em;
+}
+
+.button + .button{
+  margin-left:1em;
+}
+.button{
+    width: 30%;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding:0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    /* background-color: #B084CC; */
+    background-color: #D8B8CB;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+main section{
+    display: flex;
+    justify-content:center;
+}
+/* Aside Style */
+aside{
+  grid-area: table;
+  font-size: 1.5em;
+  text-align: center;
+}
+table{
+  margin: 0 auto;
+}
+tr, th, td{
+  padding:1em;
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
